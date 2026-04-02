@@ -1,0 +1,33 @@
+/* style.css */
+body { 
+    background: #0f0f12; 
+    color: #fff; 
+    font-family: 'Pretendard', sans-serif; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+    margin: 0; 
+    overflow: hidden; 
+}
+
+.main-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: 10px;
+    color: #ffffff;
+    margin-bottom: 40px;
+    text-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+}
+
+.controls { margin-bottom: 30px; display: flex; gap: 20px; background: #222; padding: 15px 25px; border-radius: 50px; border: 1px solid #333; }
+.piano { display: flex; position: relative; }
+
+.key { width: 50px; height: 200px; background: #eee; border: 1px solid #ccc; border-radius: 0 0 5px 5px; position: relative; cursor: pointer; transition: background 0.1s; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 10px; color: #888; font-size: 12px; }
+.key.active { background: #00e5ff; transform: scaleY(0.98); transform-origin: top; box-shadow: 0 0 20px #00e5ff; color: #000; }
+
+.key.black { width: 34px; height: 120px; background: #222; border: none; margin-left: -17px; margin-right: -17px; z-index: 2; border-radius: 0 0 3px 3px; color: #555; }
+.key.black.active { background: #ff007b; box-shadow: 0 0 20px #ff007b; color: #fff; }
+
+.hint { margin-top: 20px; color: #666; font-size: 14px; }

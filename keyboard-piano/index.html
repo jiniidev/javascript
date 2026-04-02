@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Keyboard Piano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="main-title">KEYBOARD PIANO</h1>
+
+    <div class="controls">
+        <label>Waveform: 
+            <select id="oscType">
+                <option value="sine">Soft (Sine)</option>
+                <option value="triangle" selected>Smooth (Triangle)</option>
+                <option value="square">Retro (Square)</option>
+                <option value="sawtooth">Sharp (Sawtooth)</option>
+            </select>
+        </label>
+    </div>
+
+    <div class="piano" id="piano"></div>
+
+    <p class="hint">키보드: A S D F G H J K L ; (흰 건반) / W E T Y U O P (검은 건반)</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
