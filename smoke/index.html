@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realistic Smoke & Shrinking Cigarette</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="info">
+        <p>🖱️ <b>드래그:</b> 이동 | 👆 <b>몸통 클릭:</b> 재 털기 | 💨 <b>휠:</b> 농도</p>
+        <p id="status">연기 간격: 200ms</p>
+    </div>
+
+    <div class="controls">
+        <button onclick="refill()">🚬 새 담배 리필</button>
+        <button onclick="spawnDonut()">🍩 도넛 발사!</button>
+    </div>
+
+    <div id="cigarContainer">
+        <div class="filter"></div>
+        <div class="cigarette-body" id="cigarBody">
+            <div class="burning-tip" id="tip"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
