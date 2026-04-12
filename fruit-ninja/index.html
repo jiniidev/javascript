@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍉 Fruit Ninja - Best Score Edition</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+    <video id="videoEl" autoplay playsinline muted></video>
+    <canvas id="gameCanvas"></canvas>
+    
+    <div id="hud">
+        <div id="scoreContainer">
+            <div id="scoreBox">SCORE <span id="scoreVal">0</span></div>
+            <div id="bestBox">BEST <span id="bestVal">0</span></div>
+        </div>
+        <div id="livesBox">❤️❤️❤️</div>
+        <button id="resetBtn" style="display:none;">🏠 메인으로</button>
+    </div>
+
+    <div id="startScreen" class="screen-layer">
+        <h1>FRUIT NINJA</h1>
+        <button id="startBtn" class="btn-primary">📸 카메라로 시작</button>
+        <button id="mouseBtn" id="mouseBtn">🖱️ 마우스로 시작</button>
+    </div>
+
+    <div id="readyScreen" class="screen-layer" style="display:none;">
+        <div id="statusMsg" style="font-size:20px;">준비하세요!</div>
+        <div id="countdown"></div>
+    </div>
+
+    <div id="gameOverScreen" class="screen-layer" style="display:none;">
+        <h2 style="font-family:'Bungee'; font-size:50px; color:#ff4444;">GAME OVER</h2>
+        <div id="finalScore" style="font-family:'Bungee'; font-size:30px; margin-bottom: 20px;"></div>
+        <button id="restartBtn" class="btn-primary">다시 시작</button>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
